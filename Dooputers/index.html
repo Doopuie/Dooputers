@@ -1,23 +1,27 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <!-- Must be typed at the beginning of every html document. This tag informs the web browser what document type to expect. -->
+<html> <!-- This tag is the container for all other html elements. -->
 
-    <head>
-        <link rel="stylesheet" href="indexss.css">
+    <head> <!-- this tag defines the head section of a webpage, which contains metadata about the document, such as the title, character set (fonts), and links to stylesheets or
+             scripts. -->
+        <link rel="stylesheet" href="indexss.css"> <!-- the "link" tag is used to to define the relationship between the current document and an external source, common for 
+                                                    linking stylesheets and favicons. "rel" is used to specify the relationship type. -->
         <!-- Linking Font Awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
-    <body>
+    <body> <!-- Contains the body of the document. -->
         <!--Header/Navbar-->
-        <header>
-            <nav class="navbar section-content">
+        <header> <!-- Contains the Header of the document. -->
+            <nav class="navbar section-content"> <!-- A "nav" tag defines a section of navigation links. A "class" is used to stick a name on a specific style and use it on
+                                                     multiple elements. -->
 
-                <a href="#" class="nav-logo">
-                    <h2 class="logo-text">Dooputers</h2>
+                <a href="#" class="nav-logo"> <!-- An "a" tag is used to create hyperlinks. "href" stands for hypertext reference, which specifies the destination url. -->
+                    <h2 class="logo-text">Dooputers</h2> <!-- Logo Header, "h2" is the type of header your using; h1 being the smallest and h6 being the largest. -->
                 </a>
-                <ul class="nav-menu">
-                    <button id="menu-close-button" class="fas fa-times"></button>
+                <ul class="nav-menu"> <!-- A "ul" tag stands for unordered list, no need to overcomplicate this one; it's a list. -->
+                    <button id="menu-close-button" class="fas fa-times"></button> <!-- The "button" tag creates a clickable button, and "id" is just a unique identifier for a
+                                                                                     specific element. -->
                     
-                    <li class="nav-item">
+                    <li class="nav-item"> <!-- The "li" tag is an item in an unorderd list. -->
                         <a href="#" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
@@ -47,17 +51,20 @@
 
             </nav>
         </header>
-        <main>
-            <section class="main-section">
-                <div class="section-content">
+        <main> <!-- Defines the main content of the document. -->
+            <section class="main-section"> <!-- The "section" tag simply defines a section of a document. -->
+                <div class="section-content"> <!-- The "div" tag is used as a container to group other HTML elements together, making it easier to style and manage sections of a
+                                                 webpage. -->
                     <div class="main-intro">
                         <h2 class="title">Welcome Citizens!</h2>
                         <h3 class="subtitle">It is destiny that you and I are face to face at this very instant!</h3>
-                        <p class="intro">Please, do not let this moment go to waste and explore my other pages!
+                        <p class="intro">Please, do not let this moment go to waste and explore my other pages! <!-- The "p" tag is used to define a paragraph. -->
                             If you have any inquries, do not hesitate to visit the contact page!</p>
                     </div>
                     <div class="main-image-wrapper">
-                        <img src="Pictures/IMG_0074.JPG" alt="Main" class="main-image">
+                        <img src="Pictures/IMG_0074.JPG" alt="Main" class="main-image"> <!-- The "img" tag is used to embed images in a webpage, it requires two main attributes:
+                                                                                         "src," which specifies the path to the image, and "alt," which provides alternative text
+                                                                                          for the image if it cannot be displayed. -->
                     </div>
                 </div>
             </section>
