@@ -1,74 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
 
 *{
-    margin: 0; /* "margin" is used to create space around the elements; outside of any defined borders. */
-    padding: 0; /* "padding" is the space between an element and its border; used to create internal spacing within the element. ***Here padding for top bottom left and right are set to zero.*** */
-    box-sizing: border-box; /* "box-sizing" determines how the width and the height of an element are calculated, "border-box" indicates that the padding and border are included.*/
-    font-family: "Funnel Display", sans-serif; /* "font-family" simply specifies the font used on an element.*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Funnel Display", sans-serif;
 }
 
 /*Styling for whole site*/
 ul{
-    list-style: none; /* "list-style" is a shorthand property that is used to set all list properties in one declaration. "none" removes any styling, For example, bullets or numbers. */
+    list-style: none;
 }
 
 a{
-    text-decoration: none; /* "text-decoration" is used to style the appearance of decorative lines on text such as underlines, overlines, and line-throughs. */
+    text-decoration: none;
 }
 
 button{
-    cursor: pointer; /* "cursor" controls the appearance of the mouse cursor when it hovers over an element. */
-    border: none; /* "border" allows the customization of the element's border width style and color. */
-    background: none; /* "background" allows the customization of the background of the element.*/
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
 img{
-    width: 100%; /* "width" sets the width of an element. */
+    width: 100%;
 }
 
 .section-content{
     margin: 0 auto;
-    padding: 0 20px; /* Padding here is set to top and bottom are 0px and right and left are set to 25px. */
-    max-width: 1300px; /* "max-width" sets the maximum width of an element. */
+    padding: 0 20px;
+    max-width: 1300px;
 }
 
 /*Styling for navbar*/
 header{
-    position: fixed; /* "position" specifies the type of positioning method for an element. "fixed" means the element is always in the same place even if the page is scrolled. */
+    position: fixed;
     width: 100%;
-    z-index: 5; /* "z-index" specifies the stack order of an element. An element with greater stack order is always in front of an element with a lower stack order. */
+    z-index: 5;
     background-color: rgb(0, 75, 122);
 }
 
 header .navbar{
-    display: flex; /* "display" specifies the display behavior of an element. "flex" displays an element as a block-level flex container (I'd look this one up for a visual example.) */
+    display: flex;
     padding: 20px;
-    align-items: center; /* "align-items" specifies the default alignment for items inside a flexbox or grid container. "center' being the center of the screeen. 
-                            (again visual example will better explain it.) */
-    justify-content: space-between; /* "justify-content" is used to align items with a flex container along a main axis. "space-between" being the items will have space between them.
-                                    (see a visual example.) */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar .nav-logo .logo-text{
     color: white;
     font-size: 2rem;
-    font-weight: 600; /* "font-weight" specifies the boldness of the text. */
+    font-weight: 600;
 }
 
 .navbar .nav-menu{
     display: flex;
-    gap: 10px; /* "gap" is used to specify the gap between rows and columns in a flexbos, grid, or multi-column layout. */
+    gap: 10px;
 }
 
 .navbar .nav-menu .nav-link{
     padding: 10px 18px;
     background-color:rgb(75, 75, 75);
     color: white;
-    border-radius: 100px 0%; /* "border-radius" defines the radius of the elements corners. 100px meaning the actual border radius for all corners, and 0% being how rounded it is. */
-    transition: 0.3s ease; /* "transition" allows you to change property values smoothly, over a given duration. "ease" specifies an effect with a slow start, then fast, then end slowly.  */
+    border-radius: 100px 0%;
+    transition: 0.3s ease;
 }
 
-.navbar .nav-menu .nav-link:hover{ /* "hover" means whenever the cursor is hovering over the element. */
+.navbar .nav-menu .nav-link:hover{
     color:rgb(0, 0, 0);
 }
 
@@ -76,35 +74,4 @@ header .navbar{
 .main-section {
     min-height: 100vh;
     background-color:rgb(41, 41, 41);
-}
-
-.main-section .section-content {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    color: white;
-    justify-content: space-between;
-}
-
-.main-section .main-intro .title{
-    font-size: 2rem;
-    color: lightskyblue;
-}
-
-.main-section .main-intro .subtitle{
-    margin-top: 8px;
-    max-width: 70%;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.main-section .main-intro .intro{
-    max-width: 70%;
-    margin: 24px 0 40px; /* three margin values mean top margin is 24px, left and right margins are 0, and the bottom margin is 40px. */
-    font-size: 1.12rem;
-}
-
-.main-section .main-image-wrapper{
-    max-width: 850px;
-    margin-right: 30px;
 }
