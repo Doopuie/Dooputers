@@ -1,77 +1,95 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <link rel="stylesheet" href="Contact.css">
+
         <!-- Linking Font Awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
     </head>
-
     <body>
         <!--Header/Navbar-->
         <header>
             <nav class="navbar section-content">
-                <a href="#" class="nav-logo">
+
+                <a href="index.html" class="nav-logo">
                     <h2 class="logo-text">Dooputers</h2>
-
                 </a>
-
                 <ul class="nav-menu">
+
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Home</a>
-
                     </li>
 
                     <li class="nav-item">
                         <a href="PCBuilds.html" class="nav-link">PC Builds</a>
-
                     </li>
 
                     <li class="nav-item">
                         <a href="Cars.html" class="nav-link">Cars</a>
-
                     </li>
 
                     <li class="nav-item">
                         <a href="Music.html" class="nav-link">Music</a>
-
                     </li>
 
                     <li class="nav-item">
                         <a href="Electronics.html" class="nav-link">Electronics</a>
-
                     </li>
 
                     <li class="nav-item">
                         <a href="Contact.html" class="nav-link">Contact</a>
-
                     </li>
-
                 </ul>
-
             </nav>
-
         </header>
         <main>
             <div class="container">
                 <div class="contact-box">
+
                     <div class="contact-left">
                         <h3>Send your request</h3>
+                        <form>
+                            <div class="input-row">
 
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" placeholder="John Doe">
+                                </div>
+
+                                <div class="input-group">
+                                    <label>Phone</label>
+                                    <input type="text" placeholder="123-456-7890">
+                                </div>  
+
+                                <div class="input-group">
+                                    <label>Email</label>
+                                    <input type="email" placeholder="john.d@gmail.com">
+                                </div>
+
+                                <div class="input-group">
+                                    <label>Subject</label>
+                                    <input type="text" placeholder="Question">
+                                </div>                                
+                            </div>
+
+                            <label>Message</label>
+                            <textarea rows="10" placeholder="Your Message"></textarea>
+
+                            <button type="submit">SEND</button>
+                        </form>
                     </div>
-
                     <div class="contact-right">
                         <h3>Reach me</h3>
 
+                        <table>
+                            <tr>
+                                <td>Email:</td>
+                                <td>Dooputers@pm.me</td>
+                            </tr>
+                        </table>
                     </div>
-                    
                 </div>
-
             </div>
-
         </main>
-
     </body>
-
 </html>
